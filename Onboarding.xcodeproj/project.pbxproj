@@ -17,6 +17,8 @@
 		4227711E1CEC7000008C9A41 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4227711C1CEC7000008C9A41 /* LoginViewController.xib */; };
 		422771211CEC7443008C9A41 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227711F1CEC7443008C9A41 /* RegistrationViewController.swift */; };
 		422771221CEC7443008C9A41 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771201CEC7443008C9A41 /* RegistrationViewController.xib */; };
+		422771251CEC74ED008C9A41 /* PinEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422771231CEC74ED008C9A41 /* PinEntryViewController.swift */; };
+		422771261CEC74ED008C9A41 /* PinEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771241CEC74ED008C9A41 /* PinEntryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		4227711C1CEC7000008C9A41 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = screens/LoginViewController.xib; sourceTree = "<group>"; };
 		4227711F1CEC7443008C9A41 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		422771201CEC7443008C9A41 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		422771231CEC74ED008C9A41 /* PinEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinEntryViewController.swift; path = screens/PinEntryViewController.swift; sourceTree = "<group>"; };
+		422771241CEC74ED008C9A41 /* PinEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PinEntryViewController.xib; path = screens/PinEntryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		422771161CEC6569008C9A41 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				422771231CEC74ED008C9A41 /* PinEntryViewController.swift */,
+				422771241CEC74ED008C9A41 /* PinEntryViewController.xib */,
 				422771171CEC659D008C9A41 /* LandingViewController.swift */,
 				422771181CEC659D008C9A41 /* LandingViewController.xib */,
 				4227711B1CEC7000008C9A41 /* LoginViewController.swift */,
@@ -148,6 +154,7 @@
 				422771221CEC7443008C9A41 /* RegistrationViewController.xib in Resources */,
 				4227711E1CEC7000008C9A41 /* LoginViewController.xib in Resources */,
 				4227710F1CEC64A2008C9A41 /* LaunchScreen.storyboard in Resources */,
+				422771261CEC74ED008C9A41 /* PinEntryViewController.xib in Resources */,
 				4227710C1CEC64A2008C9A41 /* Assets.xcassets in Resources */,
 				4227711A1CEC659D008C9A41 /* LandingViewController.xib in Resources */,
 			);
@@ -163,6 +170,7 @@
 				4227711D1CEC7000008C9A41 /* LoginViewController.swift in Sources */,
 				422771071CEC64A2008C9A41 /* ViewController.swift in Sources */,
 				422771191CEC659D008C9A41 /* LandingViewController.swift in Sources */,
+				422771251CEC74ED008C9A41 /* PinEntryViewController.swift in Sources */,
 				422771051CEC64A2008C9A41 /* AppDelegate.swift in Sources */,
 				422771211CEC7443008C9A41 /* RegistrationViewController.swift in Sources */,
 			);
