@@ -47,6 +47,12 @@ class LandingViewController: UIViewController {
     
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
+        
+        //add the navigation bar for the screen, since we now going into a new screen
+        self.navigationController!.navigationBarHidden = false
+        
+        let regViewController = RegistrationViewController(nibName:"RegistrationViewController", bundle: nil)
+        self.navigationController?.pushViewController(regViewController, animated: true)
     }
 
 }
