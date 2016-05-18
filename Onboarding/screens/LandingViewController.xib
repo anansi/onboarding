@@ -25,15 +25,21 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI7-dR-ILS">
-                    <rect key="frame" x="228" y="141" width="145" height="39"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PI7-dR-ILS">
+                    <rect key="frame" x="228" y="141" width="145" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="fjL-IM-Evh"/>
+                    </constraints>
                     <state key="normal" title="Login"/>
                     <connections>
                         <action selector="LoginButtonTapped:" destination="-1" eventType="touchUpInside" id="KnA-ng-6Sk"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-LS-99Z">
-                    <rect key="frame" x="228" y="194" width="145" height="39"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dZ-LS-99Z">
+                    <rect key="frame" x="228" y="194" width="145" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="SHF-HU-liS"/>
+                    </constraints>
                     <state key="normal" title="Register"/>
                     <connections>
                         <action selector="registerButtonTapped:" destination="-1" eventType="touchUpInside" id="CSa-pd-VEg"/>
@@ -42,6 +48,10 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="0dZ-LS-99Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Fz-Kd-w3S"/>
+                <constraint firstItem="PI7-dR-ILS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Duc-RX-Pmf"/>
+                <constraint firstItem="0dZ-LS-99Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="194" id="Ibg-Ua-R2W"/>
+                <constraint firstItem="PI7-dR-ILS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="141" id="Mmz-tP-Twg"/>
                 <constraint firstItem="7mb-gK-T8l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aUg-T4-Zzp"/>
                 <constraint firstItem="7mb-gK-T8l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="23" id="dBq-za-Hdm"/>
             </constraints>
