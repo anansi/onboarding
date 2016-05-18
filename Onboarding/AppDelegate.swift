@@ -12,10 +12,20 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var landingNavigationController: UINavigationController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let landingViewController = LandingViewController(nibName:"LandingViewController",bundle:nil)
+        self.landingNavigationController = UINavigationController(rootViewController: landingViewController)
+        self.landingNavigationController?.navigationBarHidden = true
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = landingNavigationController
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 
