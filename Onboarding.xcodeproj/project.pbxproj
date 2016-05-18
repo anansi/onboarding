@@ -13,6 +13,8 @@
 		4227710F1CEC64A2008C9A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4227710D1CEC64A2008C9A41 /* LaunchScreen.storyboard */; };
 		422771191CEC659D008C9A41 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422771171CEC659D008C9A41 /* LandingViewController.swift */; };
 		4227711A1CEC659D008C9A41 /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771181CEC659D008C9A41 /* LandingViewController.xib */; };
+		4227711D1CEC7000008C9A41 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4227711B1CEC7000008C9A41 /* LoginViewController.swift */; };
+		4227711E1CEC7000008C9A41 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4227711C1CEC7000008C9A41 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		422771101CEC64A2008C9A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422771171CEC659D008C9A41 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LandingViewController.swift; path = screens/LandingViewController.swift; sourceTree = "<group>"; };
 		422771181CEC659D008C9A41 /* LandingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LandingViewController.xib; path = screens/LandingViewController.xib; sourceTree = "<group>"; };
+		4227711B1CEC7000008C9A41 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = screens/LoginViewController.swift; sourceTree = "<group>"; };
+		4227711C1CEC7000008C9A41 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = screens/LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			children = (
 				422771171CEC659D008C9A41 /* LandingViewController.swift */,
 				422771181CEC659D008C9A41 /* LandingViewController.xib */,
+				4227711B1CEC7000008C9A41 /* LoginViewController.swift */,
+				4227711C1CEC7000008C9A41 /* LoginViewController.xib */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -133,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4227711E1CEC7000008C9A41 /* LoginViewController.xib in Resources */,
 				4227710F1CEC64A2008C9A41 /* LaunchScreen.storyboard in Resources */,
 				4227710C1CEC64A2008C9A41 /* Assets.xcassets in Resources */,
 				4227711A1CEC659D008C9A41 /* LandingViewController.xib in Resources */,
@@ -146,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4227711D1CEC7000008C9A41 /* LoginViewController.swift in Sources */,
 				422771071CEC64A2008C9A41 /* ViewController.swift in Sources */,
 				422771191CEC659D008C9A41 /* LandingViewController.swift in Sources */,
 				422771051CEC64A2008C9A41 /* AppDelegate.swift in Sources */,
