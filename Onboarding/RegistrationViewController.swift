@@ -71,6 +71,8 @@ class RegistrationViewController: UIViewController {
 //            UserController.sharedInstance.setCurrentUser(user!)
             
             //this is one of the bigger things to handle in this exercise. Making the navigation controller go back 2 view controllers in one go.
+            
+            //Although i have just realised that when setting your password (as apposed to updating it from the settings menu), you dont actually have to handle this situation. So the lesson isnt like able to be taught here
             var viewControllers: [UIViewController] = self.navigationController!.viewControllers
 
             viewControllers.removeAtIndex(viewControllers.count-2)
