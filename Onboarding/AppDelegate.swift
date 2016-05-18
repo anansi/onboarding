@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
+        let dashboardViewController = DashboardViewController(nibName:"DashboardViewController",bundle:nil)
+        self.sessionNavigationController = UINavigationController(rootViewController: dashboardViewController)
+        self.sessionNavigationController?.navigationBarHidden = true
         
         let landingViewController = LandingViewController(nibName:"LandingViewController",bundle:nil)
         self.landingNavigationController = UINavigationController(rootViewController: landingViewController)

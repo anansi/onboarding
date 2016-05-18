@@ -19,6 +19,8 @@
 		422771221CEC7443008C9A41 /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771201CEC7443008C9A41 /* RegistrationViewController.xib */; };
 		422771251CEC74ED008C9A41 /* PinEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422771231CEC74ED008C9A41 /* PinEntryViewController.swift */; };
 		422771261CEC74ED008C9A41 /* PinEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771241CEC74ED008C9A41 /* PinEntryViewController.xib */; };
+		422771291CEC7C62008C9A41 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422771271CEC7C62008C9A41 /* DashboardViewController.swift */; };
+		4227712A1CEC7C62008C9A41 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 422771281CEC7C62008C9A41 /* DashboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		422771201CEC7443008C9A41 /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		422771231CEC74ED008C9A41 /* PinEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinEntryViewController.swift; path = screens/PinEntryViewController.swift; sourceTree = "<group>"; };
 		422771241CEC74ED008C9A41 /* PinEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PinEntryViewController.xib; path = screens/PinEntryViewController.xib; sourceTree = "<group>"; };
+		422771271CEC7C62008C9A41 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = screens/DashboardViewController.swift; sourceTree = "<group>"; };
+		422771281CEC7C62008C9A41 /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DashboardViewController.xib; path = screens/DashboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				4227711C1CEC7000008C9A41 /* LoginViewController.xib */,
 				4227711F1CEC7443008C9A41 /* RegistrationViewController.swift */,
 				422771201CEC7443008C9A41 /* RegistrationViewController.xib */,
+				422771271CEC7C62008C9A41 /* DashboardViewController.swift */,
+				422771281CEC7C62008C9A41 /* DashboardViewController.xib */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				422771221CEC7443008C9A41 /* RegistrationViewController.xib in Resources */,
+				4227712A1CEC7C62008C9A41 /* DashboardViewController.xib in Resources */,
 				4227711E1CEC7000008C9A41 /* LoginViewController.xib in Resources */,
 				4227710F1CEC64A2008C9A41 /* LaunchScreen.storyboard in Resources */,
 				422771261CEC74ED008C9A41 /* PinEntryViewController.xib in Resources */,
@@ -168,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4227711D1CEC7000008C9A41 /* LoginViewController.swift in Sources */,
+				422771291CEC7C62008C9A41 /* DashboardViewController.swift in Sources */,
 				422771071CEC64A2008C9A41 /* ViewController.swift in Sources */,
 				422771191CEC659D008C9A41 /* LandingViewController.swift in Sources */,
 				422771251CEC74ED008C9A41 /* PinEntryViewController.swift in Sources */,
