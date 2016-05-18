@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var landingNavigationController: UINavigationController?
-
+    var sessionNavigationController: UINavigationController?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -49,6 +50,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    //MARK: Navigation Functions
+    func navigateToSessionNavigationController  (animated:Bool) {
+        
+        self.landingNavigationController?.popToRootViewControllerAnimated(false)
+        let snapShot = self.window?.snapshotViewAfterScreenUpdates(true)
+        self.sessionNavigationController?.visibleViewController!.view.addSubview(snapShot!)
+        
+        self.window?.rootViewController = self.sessionNavigationController
+        self.sessionNavigationController?.popToRootViewControllerAnimated(animated)
+        UIView.transitionWithView(self.window!, duration: NSTimeInterval(1), options: UIViewAnimationOptions.CurveLinear, animations: { self.window?.rootViewController = self.sessionNavigationController}, completion: nil)
+        UIView.animateWithDuration(NSTimeInterval(1), animations: {snapShot?.layer.opacity = 0; snapShot?.layer.transform =  CATransform3DMakeScale(1.5, 1.5, 1.5)})
+        
+    }
+    
+    func navigateToLandingNavigationController  (animated:Bool) {
+        
+        
+        let snapShot = self.window?.snapshotViewAfterScreenUpdates(true)
+        self.sessionNavigationController?.visibleViewController!.view.addSubview(snapShot!)
+        
+        self.window?.rootViewController = self.landingNavigationController
+        UIView.transitionWithView(self.window!, duration: NSTimeInterval(1), options: UIViewAnimationOptions.CurveLinear, animations: { self.window?.rootViewController = self.landingNavigationController}, completion: nil)
+        UIView.animateWithDuration(NSTimeInterval(1), animations: {snapShot?.layer.opacity = 0; snapShot?.layer.transform =  CATransform3DMakeScale(1.5, 1.5, 1.5)})
     }
 
 
