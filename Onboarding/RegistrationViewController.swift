@@ -70,16 +70,12 @@ class RegistrationViewController: UIViewController {
 //            user?.pin = self.pinEntered
 //            UserController.sharedInstance.setCurrentUser(user!)
             
-            //this is one of the bigger things to handle in this exercise. Making the navigation controller go back 2 view controllers in one go.
+            //the logic now is to do a web service call to register the user, however for this exercise, they will just move over to the SessionNavigationController (logged in world)
             
-            //Although i have just realised that when setting your password (as apposed to updating it from the settings menu), you dont actually have to handle this situation. So the lesson isnt like able to be taught here
-            var viewControllers: [UIViewController] = self.navigationController!.viewControllers
+            let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.navigateToSessionNavigationController(true)
 
-            viewControllers.removeAtIndex(viewControllers.count-2)
-            self.navigationController?.viewControllers = viewControllers
             
-            
-            self.navigationController?.popViewControllerAnimated(true)
             
             let alert = UIAlertController(title: "Your PIN has been updated successsfully", message:nil, preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {(action) in
