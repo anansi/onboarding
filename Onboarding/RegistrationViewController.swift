@@ -70,8 +70,9 @@ class RegistrationViewController: UIViewController {
 //            user?.pin = self.pinEntered
 //            UserController.sharedInstance.setCurrentUser(user!)
             
+            //this is one of the bigger things to handle in this exercise. Making the navigation controller go back 2 view controllers in one go.
             var viewControllers: [UIViewController] = self.navigationController!.viewControllers
-            
+
             viewControllers.removeAtIndex(viewControllers.count-2)
             self.navigationController?.viewControllers = viewControllers
             
