@@ -21,6 +21,11 @@ class LandingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        //this screen does not show a navigation bar. it is a pleasent, clear first screen the user sees (and when the user returns to it)
+        self.navigationController!.navigationBarHidden = true
+        
+    }
 
     /*
     // MARK: - Navigation
@@ -32,6 +37,12 @@ class LandingViewController: UIViewController {
     }
     */
     @IBAction func LoginButtonTapped(sender: AnyObject) {
+        
+        //add the navigation bar for the screen, since we now going into a new screen
+        self.navigationController!.navigationBarHidden = false
+        
+        let loginViewController = LoginViewController(nibName:"LoginViewController", bundle: nil)
+        self.navigationController?.pushViewController(loginViewController, animated: true)
     }
     
     
